@@ -4,6 +4,7 @@ import Body from "./components/Body";
 import Skills from "./components/Skills";
 import Contacts from "./components/Contacts";
 import Footer from "./components/footer";
+import Achievement from "./components/Achievements";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
        <Header/>
        <Body/>
        <Skills />
+       <Achievement />
        <Contacts />
        <Footer />
     </div>

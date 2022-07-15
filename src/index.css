@@ -120,7 +120,7 @@ header .portfolio{
   padding: 10px;
   height: 70em;
   background-color: #F7E2D6;
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 20%,rgba(255,255,255,1)), url("./images/bck2 (2).jpg");
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 20%,rgba(255,255,255,1)), url("./images/bck2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -183,6 +183,52 @@ header .portfolio{
 
 }
 
+.ach{
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 20%,rgba(255,255,255,1)), url("./images/bck3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  box-shadow: -5px -25px 100em 5em rgb(0, 0, 0) inset, 5px 5px 100em 10em rgb(0, 0, 0) inset; 
+}
+.back{
+backdrop-filter: opacity(90%);
+backdrop-filter: blur(3px);
+}
+
+.achsection{  
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.ach h1{
+  margin:20px 0px 40px 15%;
+  /* text-decoration: solid underline; */
+  color: aliceblue;
+  font-size: 3em;
+}
+.tchead{
+  margin-left: 40px ;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: aliceblue;
+}
+
+.tc{
+  margin: 20px 20px 20px 60px;
+  font-size: 1.3em;
+  float: left;
+  width: 100%;
+  color: #FAF3E3;
+}
+
+.date{
+  margin-right: 30px;
+  font-style: italic;
+  float: right;
+  position: relative;
+  bottom: 40px;
+  color: #FAF3E3;
+}
 
 .fline{
   font-weight: 100;
@@ -212,9 +258,11 @@ header .portfolio{
 }
 
 .contacttitle{
-  margin: 30px 15% 10px 20% ;
+  margin: 100px 15% 10px 10% ;
   padding: 10px 40px 10px 15% ;
-  color: #DCD7C9;
+  color: aliceblue;
+  font-size: 3em;
+  /* text-decoration: solid underline; */
 }
 .contactbody{
   background-color: #F7E2D6;
