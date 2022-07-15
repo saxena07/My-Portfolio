@@ -1,13 +1,252 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0px;
+	box-sizing: border-box;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'bungee_layersoutline';
+  src: url('bungeelayers-outline-webfont.woff2') format('woff2'),
+       url('bungeelayers-outline-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roblox";
+  src: url(Roblox-Font-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MemphisRiver";
+  src: url(MemphisRiver.ttf) format("truetype");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.myportfolio{
+  margin-left: 20px;
+  size: 3em;
+  float: left;
+}
+body {
+	background-image: url("./images/bck.jpg");
+  background-color: black;
+  height: 5em;
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: -5px -25px 30em 80px rgb(0, 0, 0) inset, 5px 5px 20px 2px rgb(0, 0, 0) inset; 
+}
+
+.intro{
+  height: 50em;
+}
+
+.proimg:hover{
+  height: 15.5em;
+  width: 15.5em;
+  background-size: 360px 300px;
+  position: absolute;
+  top: 19.9em;
+  left: 9.9em; 
+  box-shadow: -5px -5px 50px 0px rgb(255, 255, 255), 5px 5px 30px 5px rgb(0, 255, 255);
+}
+
+.proimg{
+	background-image: url("./images/pro.jpg");
+  background-size: 340px 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15em;
+  width: 15em;
+  border-radius: 100%;
+  position: absolute;
+  top: 20em;
+  left: 10em; 
+  opacity: 1;
+  box-shadow: -5px -5px 50px 0px rgb(0, 255, 255), 5px 5px 30px 5px rgb(255, 255, 255);
+}
+
+
+.body{
+  margin: 0px;
+  background-color: black;
+  height: 50em;
+  opacity: 0.6;
+  z-index:-1;  
+}
+
+header{
+  height: 90px;
+  top: 0;
+  margin: auto -16px;
+  background-image: linear-gradient(to left, #002423, black 90%);
+  border-bottom: rgb(0, 0, 0) solid 5px;
+  box-shadow: -5px -25px 100px 2px rgb(0, 255, 229), 5px 5px 20px 2px rgb(0, 0, 0);
+  z-index:-1;  
+}
+
+header .projects{
+  font-size: 2em;
+  margin: 0px 60px 0px 0px;
+  font-family: "bungee_layersoutline", sans-serif;
+  font-weight: bold;
+  color: #b4fffd;
+  float: right;
+}
+header :hover{
+  color: beige;
+  cursor: pointer;
+  font-size: 2.1em;
+}
+header .portfolio{
+    font-size: 4em;
+    font-family: "bungee_layersoutline", sans-serif;
+    font-weight: bold;
+    color: #b4fffd;
+    margin: -40px 10px 0px 40px;
+    float: left;
+    z-index:-1;  
+}
+
+
+/* .intro :hover{
+  opacity: 0.8;
+} */
+
+.skill{
+  padding: 10px;
+  height: 70em;
+  background-color: #F7E2D6;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 20%,rgba(255,255,255,1)), url("./images/bck2 (2).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  box-shadow: -5px -25px 200em 15em rgb(0, 0, 0) inset, 5px 5px 20px 2px rgb(0, 0, 0) inset; 
+}
+
+.skill h1{
+  color: aliceblue;
+  font-size: 3em;
+  margin: 20px 20px 20px 45%;
+}
+.skill h2{
+  color: aliceblue;
+  margin: 20px 20px 20px 10%;
+}
+.skill h3{
+  color: aliceblue;
+  font-size: 1em;
+}
+.sec{
+  margin-left: 10%;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.skill img{
+  height: 5em;
+  width: 5em;
+}
+.skillset {
+  width: 8%;
+  margin: 10px 10px 20px 50px;
+  padding: 5px;
+  float: left;
+  /* border: 2px solid black ; */
+}
+.skillset img{
+  background-color: #F7E2D6;
+  border-radius: 20px;
+  /* border: 10px outset gray ; */
+  margin: 5px;
+  padding: 5px;
+  /* position: relative;
+  top: 3em; */
+}
+.skillset img:hover{  
+    height: 5em;
+    width: 5em;
+    padding: 0px;
+    /* cursor: cell; */
+    /* background-color: black; */
+}
+
+.skillname{
+  color: aliceblue;
+  position: relative;
+  /* top: 3em; */
+  left: .5em; 
+
+}
+
+
+.fline{
+  font-weight: 100;
+  font-size: 4em;
+  font-family: "MemphisRiver", sans-serif;
+  color: #FAF3E3;
+  margin: 0px 100px 20px 80px;  
+  position: absolute;
+  top: 3.5em;
+  left: 7em;
+}
+
+.para{
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  color: #FAF3E3;
+  font-size: 20px;
+}
+
+
+.contactsection{
+  margin-top: 0px;
+  height: 18em;
+  background-color: black;
+}
+
+.contacttitle{
+  margin: 30px 15% 10px 20% ;
+  padding: 10px 40px 10px 15% ;
+  color: #DCD7C9;
+}
+.contactbody{
+  background-color: #F7E2D6;
+  height: 20px;
+  border-radius: 10em;
+  width: 100%;
+  padding: 60px;
+  position: relative;
+  top: 20px;
+}
+.contactset img{
+  margin: 5px 1% 30px 1%;
+  padding: 5px;
+  height: 5em;
+  width: 5em;
+  position: relative;
+  top: -50px;
+  left: 25%;
+}
+.contactset :hover{
+  height: 6em;
+  width: 6em;
+}
+
+
+.footer {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  color: aliceblue; 
+  width: 100%;
+  height: 3rem;
+  background: #2C3639;
 }
